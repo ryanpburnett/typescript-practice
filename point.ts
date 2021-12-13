@@ -19,14 +19,21 @@ class Point {
     }
 
     getDistance(another: Point) {
-        let distance: number = Math.sqrt(Math.pow(another.x - this.x, 2) + Math.pow(another.y - this.y, 2))
+        let distance: number = Math.sqrt(Math.pow(Math.abs(another.x - this.x), 2) + Math.pow(Math.abs(another.y - this.y), 2));
         log(`distance = ${distance}`);
+        return distance;
     }
 }
 
 let pointy: Point = new Point(3, 4);
 let pointy2: Point = new Point(3, 3);
+let pointy3: Point = new Point(-2, 7);
 
 pointy.draw();
 pointy.getDistance(pointy2);
 log(pointy.x);
+
+export { Point };
+export { pointy };
+export { pointy2 };
+export { pointy3 };
