@@ -17,12 +17,17 @@ message = 'abc';
 let logamundo = (message) => console.log(message);
 
 class Point {
-    x: number;
-    y: number;
+    // x: number;
+    // y: number;
 
-    constructor(x: number, y: number) {
-        this.x = x;
-        this.y = y;
+    // constructor(x: number, y: number) {
+    //     this.x = x;
+    //     this.y = y;
+    // }
+
+    // access modifiers allow for more terse syntax, removing the need for instance vars, as well as "this" keyword:
+    constructor(public x: number, public y: number) {
+        
     }
 
     draw() {
