@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.pointy3 = exports.pointy2 = exports.pointy = exports.Point = void 0;
+exports.pointy4 = exports.pointy3 = exports.pointy2 = exports.pointy = exports.Point = void 0;
 var log_1 = require("./log");
 var Point = /** @class */ (function () {
     // x: number;
@@ -31,6 +31,8 @@ var pointy2 = new Point(3, 3);
 exports.pointy2 = pointy2;
 var pointy3 = new Point(-2, 7);
 exports.pointy3 = pointy3;
+var pointy4 = new Point(0, 10);
+exports.pointy4 = pointy4;
 pointy.draw();
 pointy.getDistance(pointy2);
 (0, log_1.log)(pointy.x);

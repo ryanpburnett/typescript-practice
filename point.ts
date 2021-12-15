@@ -28,6 +28,7 @@ class Point {
 let pointy: Point = new Point(3, 4);
 let pointy2: Point = new Point(3, 3);
 let pointy3: Point = new Point(-2, 7);
+let pointy4: Point = new Point(0, 10);
 
 pointy.draw();
 pointy.getDistance(pointy2);
@@ -37,3 +38,4 @@ export { Point };
 export { pointy };
 export { pointy2 };
 export { pointy3 };
+export { pointy4 };
