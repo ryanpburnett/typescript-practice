@@ -31,7 +31,7 @@ var Quadralateral = /** @class */ (function () {
     };
     return Quadralateral;
 }());
-var triangle = new Triangle(point_1.pointy, point_1.pointy2, point_1.pointy3);
-var quad = new Quadralateral(point_1.pointy, point_1.pointy2, point_1.pointy3, point_1.pointy4);
+var triangle = new Triangle(point_1.p.a, point_1.p.b, point_1.p.c);
+var quad = new Quadralateral(point_1.p.a, point_1.p.b, point_1.p.c, point_1.p.d);
 triangle.perimeter();
 quad.perimeter();
