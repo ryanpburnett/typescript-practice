@@ -1,6 +1,6 @@
 import { log } from "./log";
 import { Point } from "./point";
-import { pointy, pointy2, pointy3, pointy4 } from "./point";
+import { p } from "./point";
 
 class Triangle {
     constructor(public point1: Point, public point2: Point, public point3: Point) {
@@ -33,8 +33,8 @@ class Quadralateral {
 
 }
 
-const triangle = new Triangle(pointy, pointy2, pointy3);
-const quad = new Quadralateral(pointy, pointy2, pointy3, pointy4);
+const triangle = new Triangle(p.a, p.b, p.c);
+const quad = new Quadralateral(p.a, p.b, p.c, p.d);
 
 triangle.perimeter();
 quad.perimeter();

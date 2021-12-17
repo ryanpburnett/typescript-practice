@@ -30,12 +30,16 @@ let pointy2: Point = new Point(3, 3);
 let pointy3: Point = new Point(-2, 7);
 let pointy4: Point = new Point(0, 10);
 
+const pointsObj = {
+    a: pointy,
+    b: pointy2,
+    c: pointy3,
+    d: pointy4
+}
+
 pointy.draw();
 pointy.getDistance(pointy2);
 log(pointy.x);
 
 export { Point };
-export { pointy };
-export { pointy2 };
-export { pointy3 };
-export { pointy4 };
+export { pointsObj as p };
