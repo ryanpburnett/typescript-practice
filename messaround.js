@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var log_1 = require("./log");
-(0, log_1.log)("hello world");
+(0, log_1["default"])("hello world");
 var arr = [1, 2, 3];
 var arr1 = [true, false, null];
 var thing;

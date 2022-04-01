@@ -15,11 +15,11 @@ var Point = /** @class */ (function () {
         this.y = y;
     }
     Point.prototype.draw = function () {
-        (0, log_1.log)("a point has been drawn at x = ".concat(this.x, " and y = ").concat(this.y));
+        (0, log_1["default"])("a point has been drawn at x = ".concat(this.x, " and y = ").concat(this.y));
     };
     Point.prototype.getDistance = function (another) {
         var distance = Math.sqrt(Math.pow(Math.abs(another.x - this.x), 2) + Math.pow(Math.abs(another.y - this.y), 2));
-        (0, log_1.log)("distance = ".concat(distance));
+        (0, log_1["default"])("distance = ".concat(distance));
         return distance;
     };
     return Point;
@@ -38,4 +38,4 @@ var pointsObj = {
 exports.p = pointsObj;
 pointy.draw();
 pointy.getDistance(pointy2);
-(0, log_1.log)(pointy.x);
+(0, log_1["default"])(pointy.x);

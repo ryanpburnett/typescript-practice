@@ -1,5 +1,3 @@
-function log(message) {
+export default function log(message) {
     console.log(message)
 }
-
-export { log as log };

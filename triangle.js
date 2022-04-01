@@ -11,7 +11,7 @@ var Triangle = /** @class */ (function () {
     Triangle.prototype.perimeter = function () {
         var perimeter;
         perimeter = this.point1.getDistance(this.point2) + this.point2.getDistance(this.point3) + this.point3.getDistance(this.point1);
-        (0, log_1.log)(perimeter);
+        (0, log_1["default"])(perimeter);
         return perimeter;
     };
     return Triangle;
@@ -26,7 +26,7 @@ var Quadralateral = /** @class */ (function () {
     Quadralateral.prototype.perimeter = function () {
         var perimeter;
         perimeter = this.point1.getDistance(this.point2) + this.point2.getDistance(this.point3) + this.point3.getDistance(this.point4) + this.point4.getDistance(this.point1);
-        (0, log_1.log)(perimeter);
+        (0, log_1["default"])(perimeter);
         return perimeter;
     };
     return Quadralateral;
